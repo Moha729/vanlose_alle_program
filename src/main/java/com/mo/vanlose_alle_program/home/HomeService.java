@@ -14,7 +14,7 @@ public class HomeService {
         this.csvReader = csvReader;
         this.fileWritter = fileWritter;
     }
-
+/*
     public ArrayList<String> readRules(){
         String csvFile = "rules.csv";
         return csvReader.readRules(csvFile);
@@ -24,9 +24,9 @@ public class HomeService {
         String cvsFile = "cleaning.csv";
         return csvReader.readRules(cvsFile);
     }
-/*    public void readTheFile(){
+*//*    public void readTheFile(){
         csvReader.readFile();
-    }*/
+    }*//*
 
     public String makeNewFile(){
         fileWritter.createNewFile();
@@ -38,5 +38,5 @@ public class HomeService {
 
 
         return null;
-    }
+    }*/
 }

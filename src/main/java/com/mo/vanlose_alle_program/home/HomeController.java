@@ -17,19 +17,19 @@ public class HomeController {
 
     @GetMapping("/")
     public String getIndex(Model model){
-        ArrayList<String> rules = service.readRules();
+        //ArrayList<String> rules = service.readRules();
         /*for (String rule : rules){
             System.out.println(rule);
         }*/
-        model.addAttribute("mainrules", rules);
+        //model.addAttribute("mainrules", rules);
 
         return "index";
     }
 
     @GetMapping("/cleaning-rules")
     public String getCleaningRules(Model model){
-        ArrayList<String> cleaningRules = service.readCleaningRules();
-        model.addAttribute("cleaningrules", cleaningRules);
+        //ArrayList<String> cleaningRules = service.readCleaningRules();
+        //model.addAttribute("cleaningrules", cleaningRules);
         return "cleaning";
     }
 }
