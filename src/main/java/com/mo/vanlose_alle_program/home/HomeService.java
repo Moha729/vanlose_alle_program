@@ -24,9 +24,9 @@ public class HomeService {
         String cvsFile = "cleaning.csv";
         return csvReader.readRules(cvsFile);
     }
-    public void readTheFile(){
+/*    public void readTheFile(){
         csvReader.readFile();
-    }
+    }*/
 
     public String makeNewFile(){
         fileWritter.createNewFile();

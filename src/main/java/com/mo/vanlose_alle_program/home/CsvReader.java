@@ -27,6 +27,7 @@ public class CsvReader {
         return rules;
     }
 
+/*
     public void readFile(){
 
         String csvFile = "output.csv";
@@ -48,4 +49,5 @@ public class CsvReader {
             e.printStackTrace();
         }
     }
+*/
 }
