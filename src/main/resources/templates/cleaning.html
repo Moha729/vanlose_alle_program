@@ -87,33 +87,33 @@
         opacity: .65;
         pointer-events: none;
     }
-    
+
 </style>
 <body>
-    <div class="Title">
-        <h1>Welcome to Vanløse alle 82 <br> House rules 2023</h1>
-    </div>
-    <hr>
-    <div class="nav-bar">
-        <button class="button-20" >Main-rules</button>
-        <button class="button-20" style="margin: 0 10% 0 10%" onclick="window.location.href = '/cleaning-rules'">Cleaning</button>
-        <button class="button-20">Rooms</button>
-    </div>
-    <hr>
+<div class="Title">
+    <h1>Welcome to Vanløse alle 82 <br> House rules 2023</h1>
+</div>
+<hr>
+<div class="nav-bar">
+    <button class="button-20" onclick="window.location.href = '/'">Main-rules</button>
+    <button class="button-20" style="margin: 0 10% 0 10%">Cleaning</button>
+    <button class="button-20">Rooms</button>
+</div>
+<hr>
 
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Main rules</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="rule : ${mainrules}">
-                    <td th:text="${rule}"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Cleaning rules</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="rule : ${cleaningrules}">
+            <td th:text="${rule}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
