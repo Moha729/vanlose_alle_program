@@ -1,0 +1,43 @@
+.formal-table th, td {
+    height: 20%;
+}
+
+.formal-table {
+    border-collapse: collapse;
+    border: 1px solid green;
+    width: 60%;
+    margin-left: 1%;
+    margin-top: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.84em;
+    min-height: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    /*
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    */
+    text-align: center;
+    font-weight: bold;
+}
+
+.formal-table th {
+    background-color: #575757;
+    color: white;
+}
+
+.formal-table tbody tr {
+    background-color: #a19e9e;
+}
+
+.formal-table tr:nth-child(even) { /*  hver evig eneste lige kolonne får disse regler under*/
+    background-color: lightgray;
+}
+.formal-table tr:hover {
+    background-color: #ddd;
+}
+.formal-table td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1.5%;
+}
+

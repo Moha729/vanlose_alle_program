@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Vanløse alle 82 | Rooms</title>
+  <link rel="stylesheet" href="/button20.css">
+  <link rel="stylesheet" href="/layout.css">
+  <link rel="stylesheet" href="/formal-table.css">
+
+
+
+</head>
+<body>
+  <header>
+    <div th:replace="navbar :: navbar"></div>
+  </header>
+
+  <div class="center-items">
+
+    <table class="formal-table">
+      <thead>
+      <tr>
+        <th>Room</th>
+        <th>Signed contract</th>
+        <th>On page</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="room : ${rooms}">
+        <td th:text="${room.roomNumber}"></td>
+<!--
+        <td th:utext="${room.signedContract} ? '&#x2714;' : '&#x2716;'"></td>
+        <td th:utext="${room.haveSeenPage}  ? '&#x2714;' : '&#x2716;'"></td>
+-->
+        <td>
+          <span th:if="${room.signedContract}">
+              <img width="30" height="30" src="https://img.icons8.com/papercut/30/checked.png" alt="checked"/>
+          </span>
+                <span th:unless="${room.signedContract}">
+              <img width="30" height="30" src="https://img.icons8.com/fluency/48/cancel.png" alt="cancel"/>
+          </span>
+        </td>
+        <td>
+          <span th:if="${room.haveSeenPage}">
+              <img width="30" height="30" src="https://img.icons8.com/papercut/30/checked.png" alt="checked"/>
+          </span>
+          <span th:unless="${room.haveSeenPage}">
+              <img width="30" height="30" src="https://img.icons8.com/fluency/48/cancel.png" alt="cancel"/>
+          </span>
+        </td>
+
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>

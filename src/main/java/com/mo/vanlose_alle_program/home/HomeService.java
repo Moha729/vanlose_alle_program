@@ -1,5 +1,7 @@
 package com.mo.vanlose_alle_program.home;
 
+import com.mo.vanlose_alle_program.rooms.Room;
+import com.mo.vanlose_alle_program.rooms.RoomService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,9 +13,16 @@ public class HomeService {
     final CsvReader csvReader;
     final FileWritter fileWritter;
 
-    public HomeService(CsvReader csvReader, FileWritter fileWritter) {
+    final RoomService roomService;
+
+    public HomeService(CsvReader csvReader, FileWritter fileWritter, RoomService roomService) {
         this.csvReader = csvReader;
         this.fileWritter = fileWritter;
+        this.roomService = roomService;
+    }
+
+    public ArrayList<Room> getRooms(){
+        return roomService.getRooms();
     }
 
     public ArrayList<String> readRules(){
@@ -52,6 +61,11 @@ public class HomeService {
         ));
     }
 
+    public ArrayList<String> getMeetingTopics(){
+        return new ArrayList<>(List.of(
+                ""
+        ));
+    }
 /*
     public ArrayList<String> readRules(){
         String csvFile = "rules.csv";

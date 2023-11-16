@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vanløse alle 82 | Cleaning rules</title>
+    <title>Vanløse alle 82 | Meeting topics</title>
     <link rel="stylesheet" href="/button20.css">
     <link rel="stylesheet" href="/layout.css">
     <link rel="stylesheet" href="/simple-table.css">
 
-
 </head>
 <body>
     <header>
-        <div th:replace="navbar :: navbar"></div>
+      <div th:replace="navbar :: navbar"></div>
     </header>
 
     <div class="center-items">
 
-        <table class="simple-table">
+      <table class="simple-table">
         <thead>
         <tr>
-            <th>Cleaning rules</th>
+          <th>Topics of discussion</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="rule : ${cleaningrules}">
-            <td th:text="${rule}"></td>
+        <tr th:each="topic : ${topics}">
+          <td th:text="${topic}"></td>
         </tr>
         </tbody>
-    </table>
+      </table>
 
-</div>
+    </div>
+
 </body>
 </html>

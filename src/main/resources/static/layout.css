@@ -1,0 +1,25 @@
+body{
+    background-color: #ce4a59;
+    background-color: #f8c8ce;
+}
+.Title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: cursive;
+    padding: 30px;
+    color: #FFDF00;
+    color: #996515;
+}
+.center-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+}
