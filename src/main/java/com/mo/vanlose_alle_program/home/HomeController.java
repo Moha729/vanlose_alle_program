@@ -18,19 +18,17 @@ public class HomeController {
 
     @GetMapping("/")
     public String getIndex(Model model){
-        ArrayList<String> rules = service.readRules();
-        /*for (String rule : rules){
-            System.out.println(rule);
-        }*/
-        model.addAttribute("mainrules", rules);
-
+        ArrayList<String> mainRules = service.readRules();
+        model.addAttribute("simpletableTitle", "Main rules");
+        model.addAttribute("rules", mainRules);
         return "index";
     }
 
     @GetMapping("/cleaning-rules")
     public String getCleaningRules(Model model){
         ArrayList<String> cleaningRules = service.readCleaningRules();
-        model.addAttribute("cleaningrules", cleaningRules);
+        model.addAttribute("simpletableTitle", "Cleaning rules");
+        model.addAttribute("rules", cleaningRules);
         return "cleaning";
     }
 
@@ -44,7 +42,16 @@ public class HomeController {
     @GetMapping("/meeting-topics")
     public String getMeetingTopics(Model model){
         ArrayList<String> topics = service.getMeetingTopics();
-        model.addAttribute("topics", topics);
+        model.addAttribute("simpletableTitle", "Topics of discussion");
+        model.addAttribute("rules", topics);
         return "meeting-topics";
+    }
+
+    @GetMapping("/common-supplies")
+    public String getCommonSuppliesSettings(Model model){
+        ArrayList<String> commonSuppliesSettings = service.getCommonSupplies();
+        model.addAttribute("simpletableTitle", "Common supplies");
+        model.addAttribute("rules", commonSuppliesSettings);
+        return "comming-supplies";
     }
 }

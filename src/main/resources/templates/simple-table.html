@@ -1,0 +1,12 @@
+<table th:fragment="simpletable" class="simple-table">
+  <thead>
+    <tr>
+      <th th:text="${simpletableTitle}">title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="rule : ${rules}">
+      <td th:text="${rule}"></td>
+    </tr>
+  </tbody>
+</table>

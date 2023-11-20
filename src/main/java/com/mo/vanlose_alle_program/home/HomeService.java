@@ -26,7 +26,7 @@ public class HomeService {
     }
 
     public ArrayList<String> readRules(){
-        return new ArrayList<String>(List.of(
+        return new ArrayList<>(List.of(
                 "Respect housemates privacy."," Knock on doors.",
                         "Be quiet after 22:00.",
         "No discrimination will be tolerated (such as racism, homo-transphobia, misogyny, etc…).",
@@ -49,7 +49,7 @@ public class HomeService {
     }
 
     public ArrayList<String> readCleaningRules(){
-        return new ArrayList<String>(List.of(
+        return new ArrayList<>(List.of(
                 "It is not allowed to have anything private in the common space.",
         "If there are things in the common areas and the cleaning team are coming, they can remove your stuff on your responsibilty.",
                 "The cleaning team does not empty garbage bins, they only clean. You must take out your trash.",
@@ -64,6 +64,13 @@ public class HomeService {
     public ArrayList<String> getMeetingTopics(){
         return new ArrayList<>(List.of(
                 ""
+        ));
+    }
+
+    public ArrayList<String> getCommonSupplies(){
+        return new ArrayList<>(List.of(
+                "supplie1",
+                "supplie2"
         ));
     }
 /*

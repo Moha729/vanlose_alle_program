@@ -13,20 +13,8 @@
     </header>
 
     <div class="center-items">
-
-        <table class="simple-table">
-            <thead>
-                <tr>
-                    <th>Main rules</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="rule : ${mainrules}">
-                    <td th:text="${rule}"></td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div th:replace="simple-table :: simpletable" ></div>
     </div>
+
 </body>
 </html>

@@ -73,7 +73,7 @@ public class RoomService {
         rooms.get(5).setHaveSeenPage(true);
         rooms.get(6).setHaveSeenPage(true);
         rooms.get(7).setHaveSeenPage(false);
-        rooms.get(8).setHaveSeenPage(false);
+        rooms.get(8).setHaveSeenPage(true);
         rooms.get(9).setHaveSeenPage(false);
         rooms.get(10).setHaveSeenPage(true);
         rooms.get(11).setHaveSeenPage(false);
@@ -85,7 +85,7 @@ public class RoomService {
     }
 
     public ArrayList<Room> initRooms(){
-        return new ArrayList<Room>(List.of(
+        return new ArrayList<>(List.of(
                 new Room("1"),
                 new Room("2"),
                 new Room("3"),

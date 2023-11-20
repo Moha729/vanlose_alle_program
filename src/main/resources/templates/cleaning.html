@@ -15,20 +15,8 @@
     </header>
 
     <div class="center-items">
+        <div th:replace="simple-table :: simpletable" ></div>
+    </div>
 
-        <table class="simple-table">
-        <thead>
-        <tr>
-            <th>Cleaning rules</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="rule : ${cleaningrules}">
-            <td th:text="${rule}"></td>
-        </tr>
-        </tbody>
-    </table>
-
-</div>
 </body>
 </html>
