@@ -26,10 +26,10 @@ public class RoomService {
 
     private void isActive(ArrayList<Room> rooms){
         rooms.get(0).setActive(true);
-        rooms.get(1).setActive(false);
+        rooms.get(1).setActive(true);
         rooms.get(2).setActive(true);
         rooms.get(3).setActive(true);
-        rooms.get(4).setActive(false);
+        rooms.get(4).setActive(true);
         rooms.get(5).setActive(true);
         rooms.get(6).setActive(true);
         rooms.get(7).setActive(true);
@@ -45,22 +45,22 @@ public class RoomService {
     }
 
     private void signedContract(ArrayList<Room> rooms){
-        rooms.get(0).setSignedContract(false);
-        rooms.get(1).setSignedContract(false);
-        rooms.get(2).setSignedContract(false);
-        rooms.get(3).setSignedContract(false);
-        rooms.get(4).setSignedContract(false);
-        rooms.get(5).setSignedContract(false);
-        rooms.get(6).setSignedContract(false);
-        rooms.get(7).setSignedContract(false);
-        rooms.get(8).setSignedContract(false);
-        rooms.get(9).setSignedContract(false);
-        rooms.get(10).setSignedContract(false);
+        rooms.get(0).setSignedContract(true);
+        rooms.get(1).setSignedContract(true);
+        rooms.get(2).setSignedContract(true);
+        rooms.get(3).setSignedContract(true);
+        rooms.get(4).setSignedContract(true);
+        rooms.get(5).setSignedContract(true);
+        rooms.get(6).setSignedContract(true);
+        rooms.get(7).setSignedContract(true);
+        rooms.get(8).setSignedContract(true);
+        rooms.get(9).setSignedContract(true);
+        rooms.get(10).setSignedContract(true);
         rooms.get(11).setSignedContract(false);
-        rooms.get(12).setSignedContract(false);
+        rooms.get(12).setSignedContract(true);
         rooms.get(13).setSignedContract(false);
-        rooms.get(14).setSignedContract(false);
-        rooms.get(15).setSignedContract(false);
+        rooms.get(14).setSignedContract(true);
+        rooms.get(15).setSignedContract(true);
 
     }
 
