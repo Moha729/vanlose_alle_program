@@ -24,6 +24,13 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/additional-rules")
+    public String getAdditionalRules(Model model){
+        ArrayList<String> keyRules = service.getKeysRules();
+        model.addAttribute("simpletableTitle", "Keys rules");
+        model.addAttribute("rules", keyRules);
+        return "additional-rules";
+    }
     @GetMapping("/cleaning-rules")
     public String getCleaningRules(Model model){
         ArrayList<String> cleaningRules = service.readCleaningRules();

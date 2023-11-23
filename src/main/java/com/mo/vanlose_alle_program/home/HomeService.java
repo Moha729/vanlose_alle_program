@@ -73,6 +73,18 @@ public class HomeService {
                 "supplie2"
         ));
     }
+
+    public ArrayList<String> getKeysRules(){
+        return new ArrayList<>(List.of(
+                "You must close the door after yourself after using it.",
+                "Anyone you let in with your key is your responsibility.",
+                "If you lose a key it will cost 500 kr."
+        ));
+    }
+
+    /*public ArrayList<String> getGuestsRules(){}
+
+    public ArrayList<String> getPartyRules(){}*/
 /*
     public ArrayList<String> readRules(){
         String csvFile = "rules.csv";
